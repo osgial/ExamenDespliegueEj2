@@ -1,0 +1,14 @@
+services:
+  db:
+    image: osgial/sqlpinacoteca:v1
+    container_name: contenedorSqlPinacoteca
+    ports:
+      - "3306:3306"
+  
+  php:
+    image: osgial/phpinacoteca:v1
+    container_name: contenedorMiApp
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
