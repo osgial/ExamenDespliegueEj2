@@ -1,6 +1,6 @@
 <?php
 
-$servername = "pinacoteca-db";
+$servername = "localhost";
 $username = "davici";
 $password = "davici1234";
 $dbname = "pinacoteca";
